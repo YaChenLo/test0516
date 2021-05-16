@@ -16,3 +16,4 @@ Continue For Loop
         Run Keyword If    '${robot}' == 'Terminator'    Continue For Loop
         ...    ELSE    Log To Console    ${robot}
     END
+hi hi
