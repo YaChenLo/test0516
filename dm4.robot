@@ -16,19 +16,3 @@ Continue For Loop
         Run Keyword If    '${robot}' == 'Terminator'    Continue For Loop
         ...    ELSE    Log To Console    ${robot}
     END
-Exit For Loop
-    FOR    ${robot}    IN    @{ROBOTS}
-        Exit For Loop If    '${robot}' == 'Terminator'
-        Log    ${robot}
-    END
-
-    FOR    ${robot}    IN    @{ROBOTS}    #Exit For Loop
-        Run Keyword If    '${robot}' == 'Terminator'    Exit For Loop
-        Log    ${robot}
-    END
-    
-    FOR    ${robot}    IN    @{ROBOTS}    #Exit For Loop
-        Run Keyword If    '${robot}' == 'Terminator'    Exit For Loop
-        ...    ELSE IF    '${robot}' == 'Bender'    Log To Console    hi Bender
-        ...    ELSE    Log To Console    ${robot}
-    END
